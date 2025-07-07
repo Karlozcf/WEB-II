@@ -1,0 +1,349 @@
+body {
+    font-family: 'Merriweather', serif;
+    background-color: rgba(245, 245, 220, 1); 
+    color: rgba(74, 43, 14, 1); 
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: rgba(74, 43, 14, 1);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+body > form, .add-product-form {
+    background-color: rgba(255, 255, 255, 1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+body > form label, .add-product-form label {
+    margin-bottom: 0;
+}
+
+body > form select,
+body > form input[type="number"],
+.add-product-form select,
+.add-product-form input[type="text"], 
+.add-product-form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(139, 90, 43, 1);
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: rgba(245, 245, 220, 1);
+    color: rgba(74, 43, 14, 1);
+    text-align: center;
+    margin-bottom: 0;
+}
+
+body > form select, .add-product-form select {
+    height: 42px;
+    line-height: 1;
+}
+
+select:focus,
+input[type="number"]:focus,
+input[type="text"]:focus { 
+    outline: none;
+    border-color: rgba(212, 175, 55, 1);
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.3);
+}
+
+input[type="submit"],
+button,
+a {
+    display: inline-block;
+    padding: 12px 25px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+input[type="submit"] {
+    background-color: rgba(74, 43, 14, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+input[type="submit"]:hover {
+    background-color: rgba(139, 90, 43, 1);
+}
+
+button {
+    background-color: rgba(139, 90, 43, 1);
+    color: rgba(255, 255, 255, 1);
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: rgba(212, 175, 55, 1);
+    color: rgba(74, 43, 14, 1);
+}
+
+a {
+    background-color: rgba(212, 175, 55, 1);
+    color: rgba(74, 43, 14, 1);
+}
+
+a:hover {
+    background-color: rgba(74, 43, 14, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.btn-adicionar {
+    background-color: #28a745; 
+}
+
+.btn-adicionar:hover {
+    background-color: #218838;
+}
+
+.btn-admin {
+    background-color: rgba(74, 43, 14, 1);
+    color: rgba(255, 255, 255, 1);
+    margin-top: 20px;
+}
+.btn-admin:hover {
+    background-color: rgba(139, 90, 43, 1);
+}
+
+table {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 8px 10px;
+    text-align: left;
+    border-bottom: 1px solid rgba(245, 245, 220, 1);
+    vertical-align: middle;
+}
+
+thead {
+    background-color: rgba(74, 43, 14, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+th {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(245, 245, 220, 1);
+}
+
+tbody tr:hover {
+    background-color: rgba(212, 175, 55, 0.1);
+}
+
+.admin-section {
+    width: 100%;
+    max-width: 800px; 
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-section h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.form-inline {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+    max-width: none;
+    width: auto;
+}
+
+td .form-inline:last-of-type {
+    margin-bottom: 0;
+}
+
+.input-quantidade {
+    width: 60px;
+    padding: 4px;
+    margin: 0;
+    text-align: center;
+    font-size: 13px;
+    border: 1px solid rgba(139, 90, 43, 1);
+    border-radius: 5px;
+    background-color: rgba(245, 245, 220, 1);
+    color: rgba(74, 43, 14, 1);
+}
+
+.input-admin-nome {
+    width: 120px; 
+    flex-grow: 1; 
+    padding: 4px;
+    margin: 0;
+    font-size: 13px;
+    text-align: left;
+    border: 1px solid rgba(139, 90, 43, 1);
+    border-radius: 5px;
+    background-color: rgba(245, 245, 220, 1);
+    color: rgba(74, 43, 14, 1);
+}
+
+.input-admin-valor {
+    width: 70px; 
+    padding: 4px;
+    margin: 0;
+    font-size: 13px;
+    text-align: right;
+    border: 1px solid rgba(139, 90, 43, 1);
+    border-radius: 5px;
+    background-color: rgba(245, 245, 220, 1);
+    color: rgba(74, 43, 14, 1);
+}
+
+.btn-acao {
+    display: inline-block;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+    font-weight: bold;
+    white-space: nowrap;
+    line-height: 1.2;
+    margin-top: 0;
+}
+
+.btn-acao.btn-remover {
+    background-color: rgba(200, 50, 50, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.btn-acao.btn-remover:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.btn-acao.btn-atualizar {
+    background-color: rgba(66, 133, 244, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.btn-acao.btn-atualizar:hover {
+    background-color: rgba(30, 80, 180, 1);
+}
+
+.admin-actions {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 5px; 
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    body > form, .add-product-form, .admin-section {
+        padding: 15px;
+        margin-bottom: 15px;
+        max-width: 100%;
+        gap: 10px;
+    }
+
+    body > form select,
+    body > form input[type="number"],
+    .add-product-form select,
+    .add-product-form input[type="text"],
+    .add-product-form input[type="number"] {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    input[type="submit"],
+    button,
+    a {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 8px;
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+
+    table {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    th, td {
+        padding: 5px 7px;
+        font-size: 12px;
+    }
+
+    .form-inline {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2px;
+        width: 100%; 
+    }
+
+    .admin-actions {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px; 
+        width: 100%;
+    }
+
+    .input-quantidade,
+    .input-admin-nome,
+    .input-admin-valor {
+        width: 100%; 
+        font-size: 12px;
+        padding: 5px;
+    }
+    
+    .btn-acao {
+        width: 100%; 
+        margin-right: 0;
+        margin-bottom: 5px;
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+}
