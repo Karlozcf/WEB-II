@@ -4,7 +4,7 @@ https://dontpad.com/grao_nobre_web2
 >LINK PARA O CÓDIGO DO DIAGRAMA DE MODELAGEM DE DADOS DO SISTEMA PROJETADO<
 https://dontpad.com/grao_nobre_web2/sql_code
 
->CÓDIGO SQL DO BANCO DE DADOS<
+>CÓDIGO SQL DO BANCO DE DADOS
 CREATE DATABASE sistema_pedidos;
 USE sistema_pedidos;
 
@@ -70,4 +70,4 @@ CREATE TABLE ItemPedido (
     id_produto INT,
     FOREIGN KEY (id_pedido) REFERENCES Pedido(id),
     FOREIGN KEY (id_produto) REFERENCES Produto(id)
-);
+);<
